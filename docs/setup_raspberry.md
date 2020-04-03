@@ -43,7 +43,7 @@ network={
 }
 ```
 
-Save this file to the boot partition at `/Volumes/boot/wpa_supplicant.conf`:
+Save this file to the boot partition at `/Volumes/boot/wpa_supplicant.conf`
 
 ```shell
 
@@ -54,7 +54,7 @@ cp wpa_supplicant.conf /Volumes/boot/wpa_supplicant.conf
 
 #### Step 3: Enable SSH
 
-Put a file named **ssh** in the root of your **boot** partition.
+Put a file named **ssh** in the root of your Raspian`s boot partition.
 
 ```shell
 
@@ -100,7 +100,7 @@ passwd
 
 #### Step 7: Change the hostname
 
-Change the hostname to something other than **raspberry** if you have more than one device
+Change the hostname to something other than **raspberry** if you have more than one device.
 
 ```shell
 
@@ -110,6 +110,8 @@ sudo vi /etc/hostname
 
 
 #### Step 8: Config the Raspberry Pi hardware and other OS settings
+
+Use the configuration tool to change default settings.
 
 ```shell
 
@@ -139,7 +141,7 @@ Choose and hit enter. Reboot.
 
 #### Step 9: Bring your Raspberry Pi up-to-date
 
-Update your operating system to the latest version of everything
+Update your operating system to the latest version of everything.
 
 ```shell
 
@@ -152,7 +154,7 @@ sudo apt-get upgrade
 
 #### Step 10: Create a key-pair and install it
 
-In order to login without a password, create a public/private key-pair
+In order to login without a password, create a public/private key-pair and add the public key to the Raspberry Pi.
 
 ```shell
 
