@@ -2,6 +2,7 @@
 *.zip
 .DS_Store
 hack/
+edgepi
 *.pem
 *.pub
 *.key

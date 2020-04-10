@@ -162,12 +162,20 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 ```
 
+Use `./edgepi` when being prompted for a key file name and location.
+
 Finally, install you public key on the Raspberry Pi
 
 ```shell
 
-cat ~/.ssh/cloudpi_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
+cat ./edgepi.pub | ssh <user>@<hostname> 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 
 ```
 
-Note: **cloudpi_rsa** is the name of the key-pair.
+You can now access the Raspberry Pi without a password:
+
+```shell
+
+ssh -i ./edgepi <user>@<hostname>
+
+```
